@@ -1,0 +1,676 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins';
+    overflow-x: hidden;   
+}
+:root{
+    --primary-color: #00213B;
+    --primary-text-color: #000000;
+    --secondary-text-color: #000B19;
+}
+header{
+    background-color: var(--primary-color);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 90%;
+  
+}
+.nav-bar-right{
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+
+
+}
+.logo{
+    width: 8%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    display: inline;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+}
+li{
+    list-style: none;
+    color: white;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-btn {
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem; 
+    border: 2px solid skyblue; 
+    border-radius: 5px;
+    cursor: pointer; 
+    background-color: transparent;
+}
+.nav-btn:hover {
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem; 
+    border: 2px solid rgb(50, 164, 209)e; 
+    border-radius: 5px;
+    cursor: pointer; 
+    background-color: rgb(50, 164, 209);
+}
+.nav-link:hover{
+    color: rgb(61, 171, 214);
+    cursor: pointer; 
+    transition: 0.2s ease;
+}
+
+.hero-section{
+    background-image: url(assets/bg.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(202, 204, 202, 0.1);;
+
+}
+.hero{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-image img{
+    border-radius: 50%;
+    width: 30vw;
+}
+
+.heri-info h1{
+    font-size: 3rem;
+}
+.header-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.header-sub-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+.header-paragraph{
+    color: var(--primary-text-color);
+}
+.social-btn {
+    display: flex;
+    gap: 1rem; /* Set gap to 0 to remove spacing */
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.s-icon {
+    display: inline;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+.s-icon:hover{
+    color: rgb(0, 156, 218);
+}
+.about-me{
+    color: white;
+    padding: 8px 16px;
+    margin-top: 1rem;
+    font-size: 1rem; 
+    border-radius: 5px;
+    cursor: pointer; 
+    background-color: var(--primary-color);
+    transition: 0.1s ease;
+}
+.about-me:hover{
+    padding: 8.6px 17px;
+    font-size: 1.1rem;
+    background-color: var(--secondary-text-color);
+}
+.about-me-title{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.about-me-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-block: 3rem;
+}
+.about-me-main-body{
+    width: 90%;
+}
+.about{
+    font-weight: 700;
+}
+.about-me-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.about-me-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.about-me-image{
+    width: 40vw;
+}
+.about-me-des{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.download-cv-btn{
+    color: var(--primary-color);
+    padding: 8px 16px;
+    margin-top: 2rem;
+    font-size: 1rem; 
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer; 
+    border: 3px var(--primary-color) solid;
+    background-color: transparent;
+    transition: 0.1s ease;
+}
+
+.download-cv-btn:hover{
+    color: white;
+    padding: 8px 16px;
+    margin-top: 2rem;
+    font-size: 1rem; 
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer; 
+    background-color: var(--primary-color);
+}
+.skill-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.skill-section-body{
+    width: 90%;
+}
+.skill-title{
+    display: flex;
+    justify-content: center;
+}
+.my-skills{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.skills{
+    font-weight: 700;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 450px;
+    height: 400px;
+    gap: 25px;
+    background-color: var(--primary-color);
+    padding-inline: 16px;
+    color: white;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+.card:hover{
+    background-color: var(--secondary-text-color);
+    
+}
+.skill-img{
+    width: 20%;
+    height: 20%;
+}
+.skill-name-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.education-section{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-block: 4rem;
+}
+.education-body{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+
+}
+.education-title{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.education{
+    font-weight: 700;
+}
+.education-main-body{
+    margin-block: 3rem;
+    display: flex;
+    justify-content: baseline;
+    width: 100vw;
+    align-content: center;
+    background-color: var(--primary-color);
+}
+.varsity-img{
+    height: 100%;
+    width: 50%;
+    background-image: url(assets/daffodil.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.varsity-info{
+    display: block;
+    margin-block: 2rem;
+    flex-direction: column;
+   
+    align-content: center;
+    color: white;
+    padding-block: 20px;
+}
+.daffodil{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.ittalic{
+    font-style: italic;
+}
+.my-varsity-info{
+    font-size: 1rem;
+}
+.footer-section{
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+.active:hover{
+    color: black;
+    background-color: white;
+}
+.menubtn{
+    color: white;
+    margin-right: 15px;
+    font-size: large;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+/* Responsive adjustments for screens with max-width of 800px */
+@media (max-width: 800px) {
+    .nav-bar {
+        justify-content: space-between;
+        margin-inline: 25px;
+        width: 100%;
+        padding: 1rem;
+    }
+    .nav-bar-right {
+        width: 10%;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
+    .logo {
+        display: flex;
+        justify-content: end;
+        width: 30%;
+    }
+
+    ul {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        height: auto;
+    }
+    .hero-image img {
+        margin-block: 2rem;
+        width: 60vw;
+    }
+    .header-title {
+        font-size: 3.7rem;
+        text-align: center;
+    }
+    .header-sub-title {
+        font-size: 1.5rem;
+    }
+    .social-btn{
+        justify-content: center;
+        font-size: 2rem;
+    }
+    .about-me-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .about-me-section,
+    .skill-section,
+    .education-section {
+        width: 100%;
+        padding: 1rem;
+    }
+    .about-me-body,
+    .cards {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    .education-section{
+        width: 100vw;
+    }
+    .education-body{
+        width: 100vw;
+    }
+    .varsity-img{
+        display: flex;
+        background-image: url(assets/daffodil.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .v-img{
+        width: 500px;
+    }
+    .education-main-body {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .footer-section {
+        text-align: center;
+        padding: 1rem;
+    }
+    .home{
+        border: none;
+    }
+    #click:checked ~ .menubtn i::before{
+        content: "\f00d";
+    }
+    .menu ul{
+        position: fixed;
+        top: 9vh;
+        right: 0px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background-color: black;
+        text-align: center;
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+    }
+    #click:checked~ul{
+        left: 0%;
+    }
+    .menu ul li{
+        margin: 40px 0px;
+    }
+    .home{
+        color: cyan;
+    }
+    .active:hover{
+        color: cyan;
+    }
+    .menubtn{
+        display: block;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .bar{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-bar {
+        justify-content: space-between;
+        margin-inline: 25px;
+        width: 100%;
+        padding: 1rem;
+    }
+    .nav-bar-right {
+        width: 10%;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
+    .logo {
+        display: flex;
+        justify-content: end;
+        width: 20%;
+    }
+
+    ul {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        height: auto;
+    }
+    .hero-image img {
+        margin-block: 2rem;
+        width: 60vw;
+    }
+    .header-title {
+        font-size: 3.7rem;
+        text-align: center;
+    }
+    .header-sub-title {
+        font-size: 1.5rem;
+    }
+    .social-btn{
+        justify-content: center;
+        font-size: 2rem;
+    }
+    .about-me-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .about-me-section,
+    .skill-section,
+    .education-section {
+        width: 100%;
+        padding: 1rem;
+    }
+    .about-me-body,
+    .cards {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+    .skill-img{
+        height: 10%;
+        width: 10%;
+    }
+    .education-section{
+        width: 100vw;
+    }
+    .education-body{
+        width: 100vw;
+    }
+    .varsity-img{
+        display: flex;
+        background-image: url(assets/daffodil.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .v-img{
+        width: 500px;
+    }
+
+    .education-main-body {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .footer-section {
+        text-align: center;
+        padding: 1rem;
+    }
+    .home{
+        border: none;
+    }
+    #click:checked ~ .menubtn i::before{
+        content: "\f00d";
+    }
+    .menu ul{
+        position: fixed;
+        top: 9vh;
+        right: 0px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background-color: black;
+        text-align: center;
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+    }
+    #click:checked~ul{
+        left: 0%;
+    }
+    .menu ul li{
+        margin: 40px 0px;
+    }
+    .home{
+        color: cyan;
+    }
+    .active:hover{
+        color: cyan;
+    }
+    .menubtn{
+        display: block;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .bar{
+        font-size: 3rem;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    /* Additional adjustments for iPhone 14 Pro Max */
+    .nav-bar {
+      margin-inline: 10px; /* Reduce margin for smaller screens */
+    }
+    .hero-image img {
+      width: 80vw; /* Adjust image width for better fit */
+    }
+  
+    .header-title {
+      font-size: 2.5rem; /* Reduce font size for better readability */
+    }
+  
+    .header-sub-title {
+      font-size: 1.2rem;
+    }
+  
+    .social-btn {
+      font-size: 1.8rem;
+    }
+  
+    /* Other adjustments as needed based on specific design requirements */
+  }
