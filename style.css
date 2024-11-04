@@ -651,26 +651,49 @@ ul{
 
 
 
-@media (max-width: 430px) {
+@media (max-width: 432px) {
     /* Additional adjustments for iPhone 14 Pro Max */
     .nav-bar {
       margin-inline: 10px; /* Reduce margin for smaller screens */
+    }
+    .bar{
+        font-size: 1.3rem;
+    }
+    .logo{
+        width: 120px;
     }
     .hero-image img {
       width: 80vw; /* Adjust image width for better fit */
     }
   
     .header-title {
-      font-size: 2.5rem; /* Reduce font size for better readability */
+      font-size: 2rem; /* Reduce font size for better readability */
     }
   
     .header-sub-title {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
+    }
+    .header-paragraph{
+        font-size: 0.5rem;
     }
   
     .social-btn {
       font-size: 1.8rem;
     }
-  
+    .about-me-title{
+        font-size: 2rem;
+    }
+    .my-skills{
+        font-size: 1.6rem;
+    }
+    .education-title{
+        font-size: 1.6rem;
+    }
+    .daffodil{
+        font-size: 2rem;
+    }
+    .bsc{
+        font-weight: 600;
+    }
     /* Other adjustments as needed based on specific design requirements */
   }
