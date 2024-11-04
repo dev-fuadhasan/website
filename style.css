@@ -468,7 +468,7 @@ ul{
     #click:checked ~ .menubtn i::before{
         content: "\f00d";
     }
-    .menu ul{
+    .menu ul {
         position: fixed;
         top: 9vh;
         right: 0px;
@@ -479,9 +479,10 @@ ul{
         background-color: black;
         text-align: center;
         overflow-x: hidden;
-        transition: all 0.5s ease;
+        transition: left 0.5s ease; /* Smooth transition */
     }
-    #click:checked~ul{
+    
+    #click:checked ~ .menu ul {
         left: 0%;
     }
     .menu ul li{
